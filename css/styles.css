@@ -1,0 +1,130 @@
+body {
+	font-family: Helvetica, sans-serif;
+	color: #999;
+	background: #222222 url('../img/diamond_upholstery.png') repeat;
+}
+
+header {
+	float: left;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+/*h1 {
+	font-size: 1.750em;
+	letter-spacing: -1.5px;
+}*/
+
+h2 {
+	font-size: 2.5em;
+	color: #ccc;
+}
+
+hr {
+ border: 0; 
+ height: 1px; 
+ background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+ background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+ background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+ background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.ruler {
+	clear: both;
+}
+
+.wrapper {
+	width: 85%;
+	margin: 0 auto;
+}
+
+/*.btn {
+	color: #999;
+	background: #ccc url('../img/diamond_upholstery.png') repeat;
+	margin: 40px 0;
+	padding: 15px 30px;
+	border-radius: 25px;
+	text-transform: uppercase;
+}*/
+
+/*.btn:hover {
+	background: #ccc;
+	}
+
+ul.nav {
+	margin: 120px 0 0 0;
+	list-style: none;
+}
+
+ul.nav li {
+	float: left;
+	margin: 0 40px;
+}
+
+ul.nav li a {
+	color: #c33027;
+}*/
+
+#intro {
+	float: right;
+	margin-top: 1.17647%;
+}
+
+#right-col .section-head,
+#left-col .section-head {
+	font-family: rosewood-std;
+	font-size: 4em;
+	color: #000;
+	margin: 5.88235% 0 -1.17647% 0;
+}
+
+#right-col img {
+	border: 3px solid #000;
+}
+
+#right-col .social-contact {
+	display: block;
+	margin-right: 4.93827%; /*20px*/
+	border: none;
+	float: left;
+	clear: none;
+}
+
+#left-col {
+	clear: both;
+}
+
+#left-col p, #right-col p {
+	font-size: 1.25em;
+}
+
+#left-col img {
+	border: 3px solid #000;
+}
+
+#left-col .no-border {
+	border: none;
+}
+
+#copyright {
+	padding: 1.20481% 0; /*10px 0*/
+	margin: 5.88235% 0 1.17647% 0;
+	text-align: center;
+}
+
+.close-margin {
+	margin-right: -.11764%;
+}
+
+.no-border {
+	border: none;
+}
+
+img {
+	max-width: 100%;
+	margin-bottom: 4.93827%; /*20px*/
+	clear: both;
+}
