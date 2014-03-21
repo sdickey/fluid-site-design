@@ -13,11 +13,6 @@ a {
 	text-decoration: none;
 }
 
-/*h1 {
-	font-size: 1.750em;
-	letter-spacing: -1.5px;
-}*/
-
 h2 {
 	font-size: 2.5em;
 	color: #ccc;
@@ -41,72 +36,44 @@ hr {
 	margin: 0 auto;
 }
 
-/*.btn {
-	color: #999;
-	background: #ccc url('../img/diamond_upholstery.png') repeat;
-	margin: 40px 0;
-	padding: 15px 30px;
-	border-radius: 25px;
-	text-transform: uppercase;
-}*/
-
-/*.btn:hover {
-	background: #ccc;
-	}
-
-ul.nav {
-	margin: 120px 0 0 0;
-	list-style: none;
-}
-
-ul.nav li {
-	float: left;
-	margin: 0 40px;
-}
-
-ul.nav li a {
-	color: #c33027;
-}*/
-
 #intro {
 	float: right;
 	margin-top: 1.17647%;
 }
 
-#right-col .section-head,
-#left-col .section-head {
+#love .section-head,
+#quirks .section-head,
+#history .section-head,
+#contact .section-head {
 	font-family: rosewood-std;
 	font-size: 4em;
 	color: #000;
 	margin: 5.88235% 0 -1.17647% 0;
 }
 
-#right-col img {
+#quirks img {
 	border: 3px solid #000;
 }
 
-#right-col .social-contact {
+#contact .social-contact {
 	display: block;
 	margin-right: 4.93827%; /*20px*/
 	border: none;
 	float: left;
-	clear: none;
 }
 
-#left-col {
-	clear: both;
-}
-
-#left-col p, #right-col p {
+#love p, #quirks p,
+#history p, #contact p {
 	font-size: 1.25em;
 }
 
-#left-col img {
+#love img {
 	border: 3px solid #000;
 }
 
-#left-col .no-border {
-	border: none;
+.float-right {
+	float: right;
+	margin-right: 0;
 }
 
 #copyright {
@@ -126,5 +93,46 @@ ul.nav li a {
 img {
 	max-width: 100%;
 	margin-bottom: 4.93827%; /*20px*/
-	clear: both;
+}
+
+/* Media Queries */
+/* iPhone --------------- */
+@media screen and (max-width: 480px) {
+
+
+	header img {
+		display: block;
+		width: 233px;
+		margin: 0 auto;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		width: 100%;
+	}
+
+	#history img {
+		display: none;
+	}
+}
+
+/* iPad ------------------ */
+@media screen and (max-width: 1024px) {
+	h2 {
+		font-size: 2em;
+	}
 }
