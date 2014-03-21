@@ -1,7 +1,10 @@
+html {
+		background: #f0f0f0 url('img/diamond_upholstery.png') repeat;
+}
+
 body {
 	font-family: Helvetica, sans-serif;
 	color: #999;
-	background: #222222 url('../img/diamond_upholstery.png') repeat;
 }
 
 header {
@@ -90,19 +93,18 @@ hr {
 	border: none;
 }
 
-img {
+img, object {
 	max-width: 100%;
 	margin-bottom: 4.93827%; /*20px*/
 }
 
 /* Media Queries */
-/* iPhone --------------- */
-@media screen and (max-width: 480px) {
-
+/* Small & Medium displays --------------- */
+@media screen and (max-width: 767px) {
 
 	header img {
 		display: block;
-		width: 233px;
+		/*width: 233px;*/
 		margin: 0 auto;
 	}
 

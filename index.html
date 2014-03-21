@@ -12,6 +12,8 @@
 
   <script type="text/javascript" src="//use.typekit.net/onc1loz.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript" src="external/matchmedia.js"></script>
+  <script type="text/javascript" src="picturefill.js"></script>
 </head>
 
 <body>
@@ -19,7 +21,13 @@
   <div class="container clearfix">
     <div class="wrapper">
       <header class="grid_3 close-margin">
-        <img src="img/sd_brand.png" alt="Sean's personal brand" width="233" height="279px">
+        <object data="img/sd_brand_combine.svg" type="image/svg+xml">
+          <a href="img/sd_brand.png">
+            <!-- [ if lte IE 8] --> 
+            <img src="img/sd_brand.png" alt="Sean's personal brand">
+            <!-- [ endif ] -->
+          </a>
+        </object>
       </header>
 
       <div id="intro" class="grid_7">
@@ -37,7 +45,11 @@
         <p class="section-head">Love</p>
         <p>I love my amazing wife. And I love beer. Luckily, I just happened to
            have this photo of my wife drinking beer. Bonus.</p>
-        <img src="img/brewery_bw.png" alt="Sean and Marina with beer">
+          <span class="picture" data-picture data-alt="Sean and Marina with beer">
+            <span class="medium-pic" data-src="external/imgs/brewery_medium.jpg" data-media="(min-width: 400px)"></span>
+            <span class="large-pic" data-src="external/imgs/brewery_large.jpg" data-media="(min-width: 675px)"></span>
+            <span class="extra-large-pic" data-src="external/imgs/brewery_exlarge.jpg" data-media="(min-width: 1000px)"></span>
+          </span>
       </div>
 
       <div id="quirks" class="grid_5 float-right">
@@ -47,9 +59,19 @@
            pretty quirky.
         </p>
         
-        <img src="img/sean_bust_bw.jpg" alt="Sean Dickey">
+        <!-- <img src="img/sean_bust_bw.jpg" alt="Sean Dickey"> -->
+          <span class="picture" data-picture data-alt="Sean Dickey">  
+            <span class="medium-pic" data-src="external/imgs/sean_bust_medium.jpg" data-media="(min-width: 400px)"></span>
+            <span class="large-pic" data-src="external/imgs/sean_bust_large.jpg" data-media="(min-width: 675px)"></span>
+            <span class="extra-large-pic" data-src="external/imgs/sean_bust_exlarge.jpg" data-media="(min-width: 1000px)"></span>
+          </span>
         
-        <img src="img/hats_bw.jpg" alt="Vintage men's hats">
+        <!-- <img src="img/hats_bw.jpg" alt="Vintage men's hats"> -->
+        <span class="picture" data-picture data-alt="Vintage hats">  
+            <span class="medium-pic" data-src="external/imgs/hats_medium.jpg" data-media="(min-width: 400px)"></span>
+            <span class="large-pic" data-src="external/imgs/hats_large.jpg" data-media="(min-width: 675px)"></span>
+            <span class="extra-large-pic" data-src="external/imgs/hats_exlarge.jpg" data-media="(min-width: 1000px)"></span>
+          </span>
       </div>
 
       <div id="history" class="grid_5">
