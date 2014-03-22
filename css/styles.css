@@ -18,6 +18,7 @@ a {
 
 h2 {
 	font-size: 2.5em;
+	/*font-size: 3.25vw;*/
 	color: #ccc;
 }
 
@@ -42,6 +43,10 @@ hr {
 #intro {
 	float: right;
 	margin-top: 1.17647%;
+}
+
+#contact {
+	clear: none;
 }
 
 #love .section-head,
@@ -71,6 +76,11 @@ hr {
 }
 
 #love img {
+	border: 3px solid #000;
+}
+
+#rockabilly-video {
+	opacity: .4;
 	border: 3px solid #000;
 }
 
@@ -108,7 +118,12 @@ img, object {
 		margin: 0 auto;
 	}
 
-	h2 {
+	#intro h2 {
+		font-size: 2.75em;
+	}
+
+	#love p, #quirks p,
+	#history p, #contact p {
 		font-size: 2em;
 	}
 

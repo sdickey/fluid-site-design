@@ -12,13 +12,11 @@
 
   <script type="text/javascript" src="//use.typekit.net/onc1loz.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <script type="text/javascript" src="external/matchmedia.js"></script>
-  <script type="text/javascript" src="picturefill.js"></script>
 </head>
 
 <body>
 
-  <div class="container clearfix">
+  <div class="container">
     <div class="wrapper">
       <header class="grid_3 close-margin">
         <object data="img/sd_brand_combine.svg" type="image/svg+xml">
@@ -50,6 +48,12 @@
             <span class="large-pic" data-src="external/imgs/brewery_large.jpg" data-media="(min-width: 675px)"></span>
             <span class="extra-large-pic" data-src="external/imgs/brewery_exlarge.jpg" data-media="(min-width: 1000px)"></span>
           </span>
+
+        <p>I'm also a music fan. I love to listen and once in a while I'll play a
+           tune or two. This is a rockabilly band I had in Minneapolis years ago.
+          <div id="rockabilly-video">
+            <iframe width="420" height="315" src="http://www.youtube.com/embed/RM5Up7HNxKs?rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>
       </div>
 
       <div id="quirks" class="grid_5 float-right">
@@ -74,7 +78,7 @@
           </span>
       </div>
 
-      <div id="history" class="grid_5">
+      <div id="history" class="grid_5 float-right">
         <p class="section-head">Then &amp; Now</p>
         <p>I started out as a wee lad in England. I lived in several states as
            my father was reassigned to different Air Force bases around the country.
@@ -91,7 +95,7 @@
         <img src="img/redadmiral.png" alt="red admirals logo" class="no-border">
       </div>
 
-      <div id="contact" class="grid_5 omega">
+      <div id="contact" class="grid_5">
         <p class="section-head">Contact</p>
 
         <p>Email me: <a href="#">sean.dickey@live.com</a></p>
@@ -108,5 +112,22 @@
     </div>
   </div>
 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="external/matchmedia.js"></script>
+  <script src="picturefill.js"></script>
+  <script src="jquery.fitvids.js"></script>
+
+  <script>
+    $("#rockabilly-video").fitVids();
+  </script>
+
+    <script>
+      $function() {
+        causeRepaintsOn = $("h1, h2, h3, p");
+        $(window).resize(function() {
+          causeRepaintsOn.css("z-index", 1);
+        });
+      });
+    </script>
 </body>
 </html>
